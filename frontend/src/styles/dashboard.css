@@ -1,0 +1,253 @@
+.dashboard-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Bug Card */
+.bug-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #e5e7eb;
+}
+
+.bug-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.bug-description {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Tags row */
+.bug-tags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Status badges */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.status-open {
+  background-color: #2563eb;
+}
+
+.status-in-progress {
+  background-color: #f59e0b;
+}
+
+.status-resolved {
+  background-color: #16a34a;
+}
+
+.status-closed {
+  background-color: #6b7280;
+}
+
+/* Priority tags */
+.priority {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e5e7eb;
+}
+
+.priority-low {
+  color: #065f46;
+}
+
+.priority-medium {
+  color: #92400e;
+}
+
+.priority-high {
+  color: #991b1b;
+}
+
+.priority-critical {
+  color: #7f1d1d;
+  background-color: #fee2e2;
+}
+/* Create Bug Form */
+.create-bug-card {
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.create-bug-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.create-bug-form input,
+.create-bug-form textarea,
+.create-bug-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.create-bug-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.create-bug-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-bug-btn:hover {
+  opacity: 0.95;
+}
+/* Status actions */
+.status-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-progress {
+  background-color: #f59e0b;
+}
+
+.btn-resolve {
+  background-color: #16a34a;
+}
+
+.btn-close {
+  background-color: #6b7280;
+}
+.bug-card:hover {
+  transform: translateY(-2px);
+  transition: 0.15s ease;
+}
+
+.bug-tags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+
+.dashboard-title {
+  margin-bottom: 24px;
+}
+
+
+/* Status Filter Tabs */
+.status-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-tab {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 16px;
+  background: #e5e7eb;
+  color: #374151;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-tab.active {
+  background: #2563eb;
+  color: white;
+}
+/* Assignment info */
+.assignment {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #374151;
+}
+
+.assigned {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.unassigned {
+  color: #9ca3af;
+  font-style: italic;
+}
+/* Global card spacing consistency */
+.bug-card {
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+/* Title hierarchy */
+.bug-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.bug-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Dashboard title spacing */
+.dashboard-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.status-btn,
+.create-bug-btn,
+.logout-btn {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.status-btn:hover,
+.create-bug-btn:hover,
+.logout-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.status-btn:active,
+.create-bug-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
