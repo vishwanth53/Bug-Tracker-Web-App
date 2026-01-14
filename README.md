@@ -55,5 +55,83 @@ This project simulates a real-world software development environment where teste
 
 ---
 
-## 🗂️ Project Structure
+⚙️ Setup Instructions
+
+1️⃣ Clone the Repository
+
+- git clone https://github.com/your-username/Bug-Tracker-Web-App.git
+- cd bug-tracker
+
+2️⃣ Backend Setup
+
+- cd backend
+- npm install
+- npm run dev
+
+Create a .env file inside backend:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+
+Backend runs on:
+http://localhost:5000
+
+3️⃣ Frontend Setup
+
+- cd frontend
+- npm install
+- npm start
+
+Frontend runs on:
+http://localhost:3000
+
+🔄 Bug Workflow
+
+Open → In Progress → Resolved → Closed
+
+Only developers/admins can update status
+
+Only admins can assign bugs
+
+Invalid transitions are blocked by backend validation
+
+📌 API Endpoints
+
+Authentication
+| Method | Endpoint       | Description   |
+| ------ | -------------- | ------------- |
+| POST   | /auth/register | Register user |
+| POST   | /auth/login    | Login user    |
+
+Bugs
+| Method | Endpoint         | Description             |
+| ------ | ---------------- | ----------------------- |
+| GET    | /bugs            | Fetch all bugs          |
+| POST   | /bugs            | Create a bug            |
+| PATCH  | /bugs/:id/status | Update bug status       |
+| PATCH  | /bugs/:id/assign | Assign bug to developer |
+
+
+Users
+| Method | Endpoint              | Description                   |
+| ------ | --------------------- | ----------------------------- |
+| GET    | /users?role=developer | Fetch developers (admin only) |
+
+🎯 Why This Project Matters
+
+- Demonstrates real-world full-stack engineering
+- Covers RBAC, JWT, REST APIs
+- Clean and scalable backend architecture
+- Strong system design foundation
+
+🔮 Future Enhancements
+
+- Bug comments & activity logs
+- Email notifications
+- File attachments
+- Advanced search & analytics
+- Docker + CI/CD
+- Cloud deployment (AWS / Azure)
+
 
